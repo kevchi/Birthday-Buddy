@@ -2,11 +2,11 @@ import Person from './Person';
 
 const List = ({ people }) => {
   return (
-    <div>
+    <section>
       {people.map((person) => {
-        return <Person {...person} key={person.id} />;
+        return <Person key={person.id} {...person} />;
       })}
-    </div>
+    </section>
   );
 };
 export default List;
